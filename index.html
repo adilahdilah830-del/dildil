@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pesona Sulbar | Beranda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #173f35;
+      --cream: #fff8ec;
+      --orange: #ed9252;
+    }
+    body { background: var(--cream); color: #24352e; font-family: Arial, sans-serif; }
+    .navbar { background: var(--forest); }
+    .navbar-brand { color: #f8bd83 !important; font-weight: 800; letter-spacing: 1px; }
+    .nav-link { color: white !important; }
+    .nav-link:hover { color: #f8bd83 !important; }
+    .hero {
+      min-height: 590px;
+      display: flex; align-items: center;
+      color: white;
+      background: linear-gradient(90deg, rgba(13,40,31,.88), rgba(13,40,31,.18)),
+      url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=85') center/cover;
+    }
+    .hero h1 { font-size: clamp(2.8rem, 6vw, 5.5rem); font-weight: 900; }
+    .eyebrow { color: #ffc18b; letter-spacing: 3px; font-weight: bold; }
+    .btn-orange { background: var(--orange); color: #182d25; border: 0; font-weight: bold; padding: 13px 24px; border-radius: 30px; }
+    .btn-orange:hover { background: #ffc18b; color: #182d25; }
+    .section-title { color: var(--forest); font-weight: 800; }
+    .destination-card { border: 0; border-radius: 22px; overflow: hidden; box-shadow: 0 12px 30px #193d3014; height: 100%; transition: .25s; }
+    .destination-card:hover { transform: translateY(-7px); }
+    .destination-card img { height: 230px; object-fit: cover; }
+    .tag { color: #a85c2d; font-size: .8rem; font-weight: bold; letter-spacing: 1px; }
+    footer { background: var(--forest); color: #f8eee0; }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">✦ PESONA SULBAR</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Buka navigasi">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="index.html">Beranda</a>
+        <a class="nav-link" href="destinasi.html">Destinasi</a>
+        <a class="nav-link" href="detail.html">Detail</a>
+        <a class="nav-link" href="tentang.html">Tentang</a>
+        <a class="nav-link" href="login.html">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container py-5">
+    <p class="eyebrow">JELAJAHI KEINDAHAN NUSANTARA</p>
+    <h1>Temukan Pesona<br>Sulawesi Barat.</h1>
+    <p class="lead my-4" style="max-width:550px">
+      Dari panorama laut yang memukau hingga budaya lokal yang kaya,
+      selalu ada cerita indah untuk ditemukan di Sulawesi Barat.
+    </p>
+    <a href="destinasi.html" class="btn btn-orange">Jelajahi Destinasi ↗</a>
+  </div>
+</header>
+
+<section class="container py-5 my-3">
+  <div class="row align-items-end mb-4">
+    <div class="col-md-8">
+      <p class="tag">PILIH PETUALANGANMU</p>
+      <h2 class="section-title display-5">Keindahan yang menanti</h2>
+      <p class="text-secondary">Inspirasi perjalanan untuk mengenal alam dan budaya Sulbar.</p>
+    </div>
+    <div class="col-md-4 text-md-end">
+      <a href="destinasi.html" class="btn btn-outline-success rounded-pill px-4">Lihat semua →</a>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card destination-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85" alt="Pantai tropis">
+        <div class="card-body p-4">
+          <span class="tag">WISATA BAHARI</span>
+          <h4 class="mt-2">Pesona Pantai</h4>
+          <p class="text-secondary">Nikmati angin laut, pasir pantai, dan panorama matahari terbenam.</p>
+          <a href="detail.html" class="text-success fw-bold text-decoration-none">Jelajahi cerita ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card destination-card">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=85" alt="Hutan hijau">
+        <div class="card-body p-4">
+          <span class="tag">WISATA ALAM</span>
+          <h4 class="mt-2">Alam yang Asri</h4>
+          <p class="text-secondary">Temukan suasana hijau, udara segar, dan pemandangan yang menenangkan.</p>
+          <a href="destinasi.html" class="text-success fw-bold text-decoration-none">Cari inspirasi ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card destination-card">
+        <img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=900&q=85" alt="Arsitektur tradisional">
+        <div class="card-body p-4">
+          <span class="tag">BUDAYA LOKAL</span>
+          <h4 class="mt-2">Cerita Tradisi</h4>
+          <p class="text-secondary">Kenali kekayaan budaya, tradisi, dan keramahan masyarakat lokal.</p>
+          <a href="tentang.html" class="text-success fw-bold text-decoration-none">Kenali kami ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container pb-5">
+  <div class="p-4 p-md-5 rounded-4 text-white" style="background:#244d3e">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <p class="eyebrow">PERJALANANMU DIMULAI DI SINI</p>
+        <h2 class="fw-bold">Sulbar bukan sekadar tujuan, tetapi pengalaman.</h2>
+        <p class="mb-md-0">Jelajahi informasi wisata dan temukan tempat yang ingin kamu kunjungi.</p>
+      </div>
+      <div class="col-md-4 text-md-end mt-3 mt-md-0">
+        <a href="destinasi.html" class="btn btn-orange">Mulai Menjelajah</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <strong>✦ PESONA SULBAR</strong>
+    <span>Website informasi wisata Sulawesi Barat © 2026</span>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
